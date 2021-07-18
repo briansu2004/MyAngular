@@ -1,0 +1,28 @@
+{
+    "email": "daniel@sutek.com",
+    "imageUrl": "http://bootdey.com/img/Content/avatar/avatar1.png",
+    "jobTitle": "JavaScript",
+    "name": "Daniel Craig",
+    "phone": "4160090332"
+}
+{
+    "email": "christine@sutek.com",
+    "imageUrl": "http://bootdey.com/img/Content/avatar/avatar3.png",
+    "jobTitle": "UX/UI",
+    "name": "Christine Smith",
+    "phone": "4160080378"
+}
+{
+    "email": "dave@sutek.com",
+    "imageUrl": "http://bootdey.com/img/Content/avatar/avatar7.png",
+    "jobTitle": "Java",
+    "name": "Dave Rogers",
+    "phone": "9050223437"
+}
+{
+    "email": "andy@sutek.com",
+    "imageUrl": "http://bootdey.com/img/Content/avatar/avatar2.png",
+    "jobTitle": "SQL",
+    "name": "Andy Maxwell",
+    "phone": "2890342390"
+}
