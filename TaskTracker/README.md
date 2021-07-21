@@ -32,7 +32,7 @@ ng serve
 
 ![add2.png](images/add2.png)
 
-## Toggle reminder
+### Toggle reminder
 
 Double click each task will toggle the reminder.
 
