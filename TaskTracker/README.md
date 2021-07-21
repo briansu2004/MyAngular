@@ -1,27 +1,45 @@
-# AngularCrash
+# Task Tracker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.2.
+Used Angular, JSON Server, RxJS, Font Awesome etc.
 
-## Development server
+## Serve
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### JSON server
 
-## Code scaffolding
+```
+npm run server
+or
+json-server --watch db.json --port 5000
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Task Tracker App
 
-## Build
+```
+npm start
+or
+ng serve
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## UI
 
-## Running unit tests
+## List all tasks
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![list.png](images/list.png)
 
-## Running end-to-end tests
+## Add a new task
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+![add1.png](images/add1.png)
 
-## Further help
+![add2.png](images/add2.png)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Toggle reminder
+
+Double click each task will toggle the reminder.
+
+![toggle.png](images/toggle.png)
+
+## Delete a task
+
+Click the red cross.
+
+![del.png](images/del.png)
