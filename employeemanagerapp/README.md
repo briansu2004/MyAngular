@@ -1,27 +1,33 @@
-# Employeemanagerapp
+# Employee Manager App frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.2.
+Used Angular, RxJS, Bootstrap etc.
 
-## Development server
+## Serve
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```
+npm start
+or
+ng serve
+```
 
-## Code scaffolding
+## UI
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### List all
 
-## Build
+![list.png](images/list.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Add
 
-## Running unit tests
+![add1.png](images/add1.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![add2.png](images/add2.png)
 
-## Running end-to-end tests
+### Edit
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+![edit.png](images/edit.png)
 
-## Further help
+### Delete
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![del1.png](images/del1.png)
+
+![del2.png](images/del2.png)
