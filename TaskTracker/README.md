@@ -1,6 +1,6 @@
 # Task Tracker
 
-Used Angular, JSON Server, RxJS, Font Awesome etc.
+Used Angular, JSON Server, RxJS, Router, Font Awesome etc.
 
 ## Serve
 
@@ -43,3 +43,7 @@ Double click each task will toggle the reminder.
 Click the red cross.
 
 ![del.png](images/del.png)
+
+## About
+
+![about.png](images/about.png)
