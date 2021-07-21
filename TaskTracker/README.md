@@ -1,6 +1,6 @@
 # Task Tracker
 
-Used Angular, JSON Server, RxJS, Router, Font Awesome etc.
+Used Angular, TypeScript, JSON Server, RxJS, Router, Font Awesome etc.
 
 ## Serve
 
@@ -22,11 +22,11 @@ ng serve
 
 ## UI
 
-## List all tasks
+### List all tasks
 
 ![list.png](images/list.png)
 
-## Add a new task
+### Add a new task
 
 ![add1.png](images/add1.png)
 
@@ -38,12 +38,26 @@ Double click each task will toggle the reminder.
 
 ![toggle.png](images/toggle.png)
 
-## Delete a task
+### Delete a task
 
 Click the red cross.
 
 ![del.png](images/del.png)
 
-## About
+### About
 
 ![about.png](images/about.png)
+
+## Knowledge Points
+
+- ng g component ...
+- ng g service ...
+- ng g interface ...
+- ngOnInit, ngOnDestroy ...
+- ngModel, ngClass ...
+- ngSubmit, ngStyle ...
+- ngIf, ngFor ...-
+- @Input(), @Output() ...
+- HttpClient, HttpHeaders ...
+- Injectable, Observable ...
+- RouterLink
