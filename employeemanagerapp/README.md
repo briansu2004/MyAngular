@@ -1,6 +1,6 @@
 # Employee Manager App frontend
 
-Used Angular, RxJS, Bootstrap etc.
+Used Angular, RxJS, jQuery, Ajax, Bootstrap etc.
 
 ## Serve
 
