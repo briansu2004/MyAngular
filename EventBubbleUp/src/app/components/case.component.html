@@ -1,0 +1,34 @@
+<mat-card class="case-card">
+  This is the Case component:
+
+  <mat-card class="case-card">
+    <div>
+      Using Service to communicate between grand-parent and grand-child:
+    </div>
+    <div>
+      <button (click)="onClickDetails('John')" mat-button color="primary">
+        <span>John</span>
+      </button>
+
+      <button (click)="onClickDetails('Joe')" mat-button color="primary">
+        <span>Joe</span>
+      </button>
+
+      <button (click)="onClickDetails('Jason')" mat-button color="primary">
+        <span>Jason</span>
+      </button>
+    </div>
+  </mat-card>
+
+  <!-- <mat-card class="case-card">
+    <div>
+      Using RxJS Observables to communicate between grand-parent and
+      grand-child:
+    </div>
+    <div>
+      <button (click)="OpenNewTab('Brian')" mat-button color="primary">
+        <span>Brian</span>
+      </button>
+    </div>
+  </mat-card> -->
+</mat-card>
