@@ -34,8 +34,8 @@ export class CaseComponent implements OnInit {
     // }
   }
 
-  OpenNewTab(personName: string): void {
-    console.log('[OpenNewTab] Please open a new tab for ', personName);
-    this.mission = 'Open a new tab for ' + personName;
-  }
+  // OpenNewTab(personName: string): void {
+  //   console.log('[OpenNewTab] Please open a new tab for ', personName);
+  //   this.mission = 'Open a new tab for ' + personName;
+  // }
 }

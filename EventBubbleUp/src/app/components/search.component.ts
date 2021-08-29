@@ -1,11 +1,5 @@
-import {
-  ChangeDetectorRef,
-  Component,
-  Input,
-  OnDestroy,
-  OnInit,
-} from '@angular/core';
-import { Observable, Subscription } from 'rxjs';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { MissionService } from '../services/mission.service';
 
 @Component({
@@ -15,8 +9,8 @@ import { MissionService } from '../services/mission.service';
   providers: [MissionService],
 })
 export class SearchComponent implements OnInit, OnDestroy {
-  @Input() command!: Observable<any>;
-  _command: string = '<no command yet>';
+  // @Input() command!: Observable<any>;
+  // _command: string = '<no command yet>';
 
   history: string[] = [];
   mission = '<no mission announced>';
@@ -26,8 +20,7 @@ export class SearchComponent implements OnInit, OnDestroy {
   subscription: Subscription;
 
   constructor(
-    private missionService: MissionService,
-    private cd: ChangeDetectorRef
+    private missionService: MissionService // private cd: ChangeDetectorRef
   ) {
     this.subscription = missionService.missionAnnounced$.subscribe(
       (mission) => {
