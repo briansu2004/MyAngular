@@ -1,8 +1,6 @@
-# Angular Crash Course (TodoList)
+# Angular Todo List app
 
-This is the code for the crash course on YouTube
-
-## Quick Start
+## Steps
 
 ```bash
 # Install dependencies
@@ -14,3 +12,7 @@ ng serve
 # Build for production
 ng build
 ```
+
+## Screenshot
+
+![home.png](images/home.png)
