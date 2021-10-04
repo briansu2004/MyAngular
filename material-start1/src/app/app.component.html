@@ -1,0 +1,77 @@
+<header class="toolbar">
+  <div class="left header-item">
+    <h6>Menu</h6>
+    <h1>ngTube</h1>
+  </div>
+  <div class="center header-item">
+    <label for="search">Search:</label>
+    <input
+      #input
+      type="text"
+      id="search"
+      name="search"
+      minlength="3"
+      maxlength="18"
+      size="10"
+    />
+    <div (click)="search(input.value.toString())">Search</div>
+    <button mat-flat-button color="accent">SEARCH</button>
+  </div>
+  <div class="right header-item">
+    <h6>Create</h6>
+    <h6>Apps</h6>
+    <h6>Notifications</h6>
+    <h6>Profile</h6>
+  </div>
+</header>
+
+<nav class="navigation">
+  <ul>
+    <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+    <li>
+      <a routerLink="feed/trending" routerLinkActive="active">Trending</a>
+    </li>
+    <li>
+      <a routerLink="feed/subscriptions" routerLinkActive="active"
+        >Subscriptions</a
+      >
+    </li>
+  </ul>
+  <hr />
+  <ul>
+    <li><a>Library</a></li>
+    <li><a>History</a></li>
+    <li><a>Your videos</a></li>
+    <li><a>Watch later</a></li>
+    <li><a>Liked videos</a></li>
+    <li><a>Playlists</a></li>
+  </ul>
+  <hr />
+  <ul>
+    <h3>Subscriptions</h3>
+    <li><a>Sally</a></li>
+    <li><a>Sue</a></li>
+    <li><a>Rhubarb</a></li>
+    <li><a>Basil</a></li>
+  </ul>
+  <hr />
+  <ul>
+    <h3>More From YouTube</h3>
+    <li><a>YouTube Premium</a></li>
+    <li><a>Movies & Shows</a></li>
+    <li><a>Gaming</a></li>
+    <li><a>Live</a></li>
+    <li><a>Fashion & Beauty</a></li>
+    <li><a>Learning</a></li>
+    <li><a>Sports</a></li>
+  </ul>
+  <hr />
+  <ul>
+    <li><a>Settings</a></li>
+    <li><a>Report history</a></li>
+    <li><a>Help</a></li>
+    <li><a>Send feedback</a></li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>
