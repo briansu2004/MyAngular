@@ -53,6 +53,12 @@ nav a.active {
 }
 ```
 
+## Screenshot
+
+![](image/README/01.png)
+
+![](image/README/02.png)
+
 ## Appendix
 
 ```dos
@@ -98,4 +104,14 @@ v14.17.3
 
 C:\Code\MyAngular\angular-router\routing-demo>npm -v
 7.20.0
+
+C:\Code\MyAngular\angular-router\routing-demo>ng g c department-list -it -is
+CREATE src/app/department-list/department-list.component.spec.ts (683 bytes)
+CREATE src/app/department-list/department-list.component.ts (291 bytes)
+UPDATE src/app/app.module.ts (509 bytes)
+
+C:\Code\MyAngular\angular-router\routing-demo>ng g c employee-list -it -is
+CREATE src/app/employee-list/employee-list.component.spec.ts (669 bytes)
+CREATE src/app/employee-list/employee-list.component.ts (285 bytes)
+UPDATE src/app/app.module.ts (617 bytes)
 ```
