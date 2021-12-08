@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row mb-4" *ngFor="let post of posts">
+    <div class="col-4">
+      <img [src]="'assets/images/' + post.image" style="width: 100%" />
+    </div>
+    <div class="col-8">
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.description }}</p>
+
+      <div class="col-8"></div>
+      <div class="input-group col-4">
+        <input
+          class="form-control blog-input"
+          [([(ngModel)]="quantity[post.id]"
+          placeholder="{{ post.quantity_left }}
+        {{ 'rooms_left' | translate }} "
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary"
+            (click)="buy(post)"
+            type="button"
+          >
+            {{ "buy" | translate }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<nav class="container mb-4 mt-4">
+  <div class="row">
+    <div class="col-9"></div>
+    <div class="col-3">
+      <select class="custom-select" (change)="changeLangEvent($event)">
+        <option value="en" [selected]="lang === 'en'">English</option>
+        <option value="fr" [selected]="lang === 'fr'">French</option>
+      </select>
+    </div>
+  </div>
+</nav>
