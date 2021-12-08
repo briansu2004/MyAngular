@@ -12,8 +12,8 @@ export class AppComponent {
 
   constructor(private translateService: TranslateService) {
     this.translateService.setDefaultLang(Constants.DEFAULT_LANG);
-    this.translateService.use(
-      localStorage.getItem('lang') || Constants.DEFAULT_LANG
-    );
+    const lang = localStorage.getItem('lang') || Constants.DEFAULT_LANG;
+    this.translateService.use(lang);
+    document.documentElement.lang = lang;
   }
 }

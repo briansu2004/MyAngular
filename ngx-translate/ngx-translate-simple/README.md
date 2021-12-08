@@ -1,11 +1,11 @@
-# NgxTranslateSimple
+# Ngx Translate Simple
 
 ## Commands
 
 ```dos
 npm i -g @angular/cli
 
-ng new ngx-translate-simple --routing --style css
+ng new ngx-translate-simple --routing --style=scss
 
 bootstrapcdn.com
 v5.1.3
@@ -52,8 +52,31 @@ index.html
 
 ## Screenshot
 
+![](image/README/api.png)
+
+![](image/README/en.png)
+
+![](image/README/fr.png)
+
 ## Appendix
 
 ### npm install different/older version
 
 npm i <module>@<version>
+
+### css to scss
+
+```dos
+ng g schematics-scss-migrate:scss-migrate --dry-run=true
+ng g schematics-scss-migrate:scss-migrate
+
+ng config schematics.@schematics/angular:component.style scss
+
+npm i -g renamer
+```
+
+angular.json
+
+```json
+    "styles": ["src/styles.scss"],
+```

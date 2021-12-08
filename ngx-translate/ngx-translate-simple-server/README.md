@@ -6,12 +6,12 @@
 npm init -y
 npm i -S express cors
 npm i -D nodemon
-npm run dev
+npm start
 ```
 
 ## Screenshot
 
-![](images/01.png)
+![](image/README/api.png)
 
 ## Cors
 
@@ -38,3 +38,5 @@ module.exports = posts;
 ```javascript
 const posts = require("./posts");
 ```
+
+## JSON Formatter - Chrome JSON Extension

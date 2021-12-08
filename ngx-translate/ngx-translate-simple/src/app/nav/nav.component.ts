@@ -7,7 +7,7 @@ import { Constants } from '../common/constant';
   styleUrls: ['./nav.component.css'],
 })
 export class NavComponent implements OnInit {
-  lang: string = Constants.DEFAULT_LANG;
+  lang: string = localStorage.getItem('lang') || Constants.DEFAULT_LANG;
 
   constructor() {}
 

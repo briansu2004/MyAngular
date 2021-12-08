@@ -4,14 +4,38 @@
       <img [src]="'assets/images/' + post.image" style="width: 100%" />
     </div>
     <div class="col-8">
-      <h2>{{ post.title }}</h2>
-      <p>{{ post.description }}</p>
+      <!-- <h2>{{ post.title_en }}</h2> -->
+      <!-- <p>post.description_{{ lang }}</p> -->
+
+      <!-- <p>{{ lang }}</p> -->
+
+      <h2>{{ lang === "en" ? post.title_en : post.title_fr }}</h2>
+      <p>{{ lang === "en" ? post.description_en : post.description_fr }}</p>
+
+      <!-- this way is not working -->
+      <!-- <div [ngSwitch]="lang">
+        <h2 *ngSwitchCase="'en'">{{ post.title_en }}</h2>
+        <h2 *ngSwitchCase="'fr'">{{ post.title_fr }}</h2>
+        <h2 *ngSwitchCase="'cn'">{{ post.title_cn }}</h2>
+        <h2 *ngSwitchDefault>{{ post.title_fr }}</h2>
+      </div> -->
+
+      <!-- <div [ngSwitch]="lang">
+        <h2 *ngSwitchCase="'en'">{{ post.title_en }}</h2>
+        <p *ngSwitchCase="'en'">{{ post.description_en }}</p>
+        <h2 *ngSwitchCase="'fr'">{{ post.title_fr }}</h2>
+        <p *ngSwitchCase="'fr'">{{ post.description_fr }}</p>
+        <h2 *ngSwitchCase="'cn'">{{ post.title_cn }}</h2>
+        <p *ngSwitchCase="'cn'">{{ post.description_cn }}</p>
+        <h2 *ngSwitchDefault>{{ post.title_en }}</h2>
+        <p *ngSwitchDefault>{{ post.description_en }}</p>
+      </div> -->
 
       <div class="col-8"></div>
       <div class="input-group col-4">
         <input
           class="form-control blog-input"
-          [([(ngModel)]="quantity[post.id]"
+          [(ngModel)]="quantity[post.id]"
           placeholder="{{ post.quantity_left }}
         {{ 'rooms_left' | translate }} "
         />
