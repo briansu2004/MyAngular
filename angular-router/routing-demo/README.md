@@ -20,6 +20,13 @@ index.html
 app-routing.module.ts
 
 ```typescript
+const routes: Routes = [
+  { path: 'departments', component: DepartmentListComponent },
+  { path: 'employees', component: EmployeeListComponent },
+];
+
+...
+
 export const routingComponents = [
   DepartmentListComponent,
   EmployeeListComponent,
