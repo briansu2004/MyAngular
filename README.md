@@ -1,11 +1,14 @@
+# MyAngular
 
-# My Angular Projects
+My Angular
 
-## Project 4
+## My Angular Projects
+
+### Project 4
 
 ...
 
-## Project 3
+### Project 3
 
 Worked on an open-to-public online web application of children aid app and an agency license management app for Ministry of Children, Community and Social Services
 
@@ -16,7 +19,7 @@ Worked on an open-to-public online web application of children aid app and an ag
 - Migrated the IBM Curam Social Program Management data model to Oracle DB; Created the PL/SQL batch jobs for an initial load and some regular delta loads.
 - Managed code repository, pull requests, merges and pipelines with GitLab.
 
-## Project 2
+### Project 2
 
 Built a new web app and a new tablet app and deployed to Azure Cloud for Ministry of Transportation and Mistry of Labour, Immigration, Training and Skills Development
 
@@ -26,7 +29,7 @@ Built a new web app and a new tablet app and deployed to Azure Cloud for Ministr
 - Automated the integration testing with Postman and Azure Data Studio.
 - Managed code repositories with Git and Azure DevOps.
 
-## Project 1
+### Project 1
 
 Created a Spring Boot RESTful application for a large telecommunication client
 
