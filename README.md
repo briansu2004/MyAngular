@@ -44,3 +44,7 @@ Created a Spring Boot RESTful application for a large telecommunication client
 - Built front-end progressive web app with Angular and Angular UI Bootstrap CSS.
 - Created new components with Angular CLI, applied routes, structured modules and components, managed states with observable store, ran unit tests with Karma.
 - Deployed to OpenShift with Jenkins.
+
+## Angular tricks
+
+- Angular i18n in ts
