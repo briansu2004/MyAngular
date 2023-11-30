@@ -47,4 +47,4 @@ Created a Spring Boot RESTful application for a large telecommunication client
 
 ## Angular tricks
 
-- Angular i18n in ts
+[Angular i18n in ts](Angular_i18n_in_ts.md)
