@@ -1,5 +1,9 @@
 # SQ - refactor this function to reduce its cognitive complexity from 368 to 15
 
+Angular typescript
+
+## Old code
+
 ```ts
 export function getI18n(ts: TranslateService, i18nKey: string): string {
  return ts.instant(i18nKey);
@@ -198,3 +202,88 @@ export function getElectionsData(eleResp: InterfaceAPIGstElectionResponse, ts: T
    electionsData.push({ Index: i, isHidden: false, isLink: false; Col1: titleGst488, text: gst488CurrentEffectiveValue + gst488FutureEffectiveValue + gst488CurrentRevokeValue + gst488FutureRevokeValue, textAfter: '', textBefore: '' });
   }
 ```  
+
+## New code (WIP)
+
+```ts
+// Constants
+const prefixEffective = getI18n(ts, 'prefixEffective');
+const prefixFutureEffective = getI18n(ts, 'prefixFutureEffective');
+const prefixRevoked = getI18n(ts, 'prefixRevoked');
+const prefixFutureRevoked = getI18n(ts, 'prefixFutureRevoked');
+
+function formatDate(prefix: string, date: string): string {
+  return date ? `${prefix}${date}. ` : '';
+}
+
+function createElectionData(index: number, title: string, values: string[]): void {
+  const electionData = {
+    Index: index,
+    isHidden: false,
+    isLink: false,
+    Col1: title,
+    text: values.join(''),
+    textAfter: '',
+    textBefore: '',
+  };
+  electionsData.push(electionData);
+}
+
+// Example usage
+const titleGst74 = getI18n(ts, 'gst74');
+const gst74EffectiveValue = formatDate(prefixEffective, eleResp.gst74EffectiveDate);
+const gst74ExpiryValue = formatDate(prefixRevoked, eleResp.gst74ExpiryDate);
+createElectionData(4, titleGst74, [gst74EffectiveValue, gst74ExpiryValue]);
+```
+
+and
+
+```ts
+interface ElectionField {
+  title: string;
+  datePrefix: string;
+  dateKey: string;
+  hasFutureDates?: boolean;
+  hasRevokeDates?: boolean;
+}
+
+const electionFields: ElectionField[] = [
+  { title: 'gst20', datePrefix: 'prefix', dateKey: 'gst20', hasFutureDates: false, hasRevokeDates: false },
+  { title: 'gst70', datePrefix: 'prefix', dateKey: 'gst70CurrentFYEMMDD', hasFutureDates: false, hasRevokeDates: false },
+  // Add more fields as needed
+];
+
+function formatDate(prefix: string, date: string): string {
+  return date ? `${prefix}${date}. ` : '';
+}
+
+function createElectionData(index: number, field: ElectionField, eleResp: InterfaceAPIGstElectionResponse): void {
+  const { title, datePrefix, dateKey, hasFutureDates, hasRevokeDates } = field;
+
+  const dateValue = eleResp[dateKey];
+  const futureDatesValue = hasFutureDates ? eleResp[`${title}FutureStartDate`] + '-' + eleResp[`${title}FutureEndDate`] : '';
+  const revokeDatesValue = hasRevokeDates ? eleResp[`${title}FutureRevokeDate`] : '';
+
+  const dateValueFormatted = formatDate(datePrefix, dateValue);
+  const futureDatesFormatted = formatDate(prefixFutureEffective, futureDatesValue);
+  const revokeDatesFormatted = formatDate(prefixFutureRevoked, revokeDatesValue);
+
+  const values = [dateValueFormatted, futureDatesFormatted, revokeDatesFormatted].filter(Boolean);
+  const electionData = {
+    Index: index,
+    isHidden: false,
+    isLink: false,
+    Col1: getI18n(ts, title),
+    text: values.join(''),
+    textAfter: '',
+    textBefore: '',
+  };
+  electionsData.push(electionData);
+}
+
+// Example usage in a loop
+for (let i = 0; i < electionFields.length; i++) {
+  const field = electionFields[i];
+  createElectionData(i + 1, field, eleResp);
+}
+```
