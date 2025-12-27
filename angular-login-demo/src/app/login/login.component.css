@@ -1,0 +1,14 @@
+.login-card {
+  width: 350px;
+  margin: 100px auto;
+  padding: 20px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}

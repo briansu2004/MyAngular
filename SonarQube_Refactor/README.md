@@ -1,4 +1,4 @@
-# SQ - refactor this function to reduce its cognitive complexity from 368 to 15
+# SonarQube - refactor this function to reduce its cognitive complexity from 368 to 15
 
 Angular typescript
 
@@ -203,7 +203,7 @@ export function getElectionsData(eleResp: InterfaceAPIGstElectionResponse, ts: T
   }
 ```  
 
-## New code (WIP)
+## New code
 
 ```ts
 // Constants
