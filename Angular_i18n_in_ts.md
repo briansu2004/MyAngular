@@ -1,5 +1,9 @@
 # Angular i18n in ts
 
+- [Basic example](#basic-example)
+- [util.ts](#utilts)
+- [Get values based on the locale](#get-values-based-on-the-locale)
+
 ## Basic example
 
 It is easy and straightforward to use i18 keys in Angular html files.
