@@ -1,14 +1,45 @@
+/* Centers the login card on the page */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Takes full viewport height */
+  background-color: #f5f5f5; /* Light background for contrast */
+}
+
 .login-card {
-  width: 350px;
-  margin: 100px auto;
-  padding: 20px;
+  padding: 32px;
+  width: 100%;
+  max-width: 400px; /* Standard login card width */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+/* Ensures fields stack vertically with consistent spacing */
+.input-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Space between the two lines */
+  margin-bottom: 16px;
 }
 
 .full-width {
   width: 100%;
 }
 
+button {
+  height: 48px; /* Slightly taller button for better UX */
+  margin-top: 8px;
+}
+
 .error {
-  color: red;
-  margin-top: 10px;
+  color: #f44336;
+  text-align: center;
+  margin-top: 16px;
+  font-size: 0.9rem;
 }

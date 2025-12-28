@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class AuthService {
-  constructor() {}
+  private isLoggedIn = false; // Track the login status
 
   private users = [
     { username: 'admin', password: 'admin123' },
@@ -12,8 +12,16 @@ export class AuthService {
   ];
 
   login(username: string, password: string): boolean {
-    return this.users.some(
+    const isValid = this.users.some(
       (u) => u.username === username && u.password === password
     );
+
+    this.isLoggedIn = isValid; // Store the state
+    return isValid;
+  }
+
+  // Method for the guard to check status
+  isAuthenticated(): boolean {
+    return this.isLoggedIn;
   }
 }
