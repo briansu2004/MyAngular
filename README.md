@@ -44,7 +44,7 @@
 
 ### Project 7
 
-<!-- Hatfield -->
+<!-- Hatfield (VUE) -->
 
 Built a web application to manage Dask Kubernetes Clusters and deployed it to Microsoft Azure, using a Golang REST API on the backend and Angular on the frontend.
 
@@ -68,7 +68,7 @@ Built the Canadian Dental Care Plan enrollment web app for Health Canada
 
 ### Project 5
 
-<!-- RBC -->
+<!-- RBC (VUE) -->
 
 Designed and implemented a web app with APIs and deployed to Azure
 
