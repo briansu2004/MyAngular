@@ -11,7 +11,7 @@
 - [My Angular Versions](#my-angular-versions)
   - [1. Anchor Yourself in What Does _Not_ Change](#1-anchor-yourself-in-what-does-not-change)
     - [Non-negotiable fundamentals](#non-negotiable-fundamentals)
-  - [2. Learn “What’s New” — But at the Concept Level](#2-learn-whats-new--but-at-the-concept-level)
+  - [2. Learn “What's New” - But at the Concept Level](#2-learn-whats-new---but-at-the-concept-level)
     - [Recent Angular evolution you should understand conceptually](#recent-angular-evolution-you-should-understand-conceptually)
   - [3. Prepare for “Version Shock” Questions](#3-prepare-for-version-shock-questions)
     - [Example](#example)
@@ -143,7 +143,7 @@ Created a Spring Boot RESTful application for a large telecommunication client
 - v19 (node v18+)
 - v21
 
-Angular’s six-month release cadence and periodic paradigm shifts (e.g., standalone APIs, signals) can make the framework feel unstable at the surface level. However, Angular interviews are rarely about memorizing the latest syntax. Strong candidates demonstrate **conceptual mastery, architectural judgment, and upgrade adaptability**.
+Angular's six-month release cadence and periodic paradigm shifts (e.g., standalone APIs, signals) can make the framework feel unstable at the surface level. However, Angular interviews are rarely about memorizing the latest syntax. Strong candidates demonstrate **conceptual mastery, architectural judgment, and upgrade adaptability**.
 
 Below is a practical, interview-oriented preparation strategy that aligns with how senior Angular engineers are actually evaluated.
 
@@ -173,7 +173,7 @@ If you can explain `ChangeDetectionStrategy.OnPush` without mentioning a specifi
 
 ---
 
-### 2. Learn “What’s New” — But at the Concept Level
+### 2. Learn “What's New” - But at the Concept Level
 
 Interviewers expect awareness, not memorization.
 
@@ -236,7 +236,7 @@ Be ready to discuss:
 
 If you can say:
 
-> “It depends, and here’s what I would evaluate…”
+> “It depends, and here's what I would evaluate…”
 
 you will score well.
 
@@ -282,7 +282,7 @@ Angular experience + architectural thinking = strong signal.
 
 Stop thinking:
 
-> “Angular changes too fast; I can’t keep up.”
+> “Angular changes too fast; I can't keep up.”
 
 Start thinking:
 
@@ -458,7 +458,7 @@ Often asked explicitly in interviews.
 
 ### 5. Services & Dependency Injection
 
-Angular’s DI system is a key concept interviewers look for.
+Angular's DI system is a key concept interviewers look for.
 
 - Services and providers
 - Dependency Injection
@@ -501,7 +501,7 @@ This shows seniority and production experience.
 Instead of listing this as a raw bullet, frame it as **comparative understanding**:
 
 - Understanding of architectural differences between Angular, React, and Vue
-- Angular’s opinionated framework vs React’s library-based approach
+- Angular's opinionated framework vs React's library-based approach
 - RxJS-based reactive model vs React hooks
 - Template-driven vs JSX-based rendering
 
@@ -520,7 +520,7 @@ This shows **breadth without diluting Angular focus**.
 
 - Do **not** over-emphasize React/Vue if the job is Angular-focused.
 - Organize skills by **concept areas**, not individual features.
-- If you have production experience (which you clearly do), prioritize **RxJS, DI, routing, testing, and performance** — these matter more than basic bindings.
+- If you have production experience (which you clearly do), prioritize **RxJS, DI, routing, testing, and performance** - these matter more than basic bindings.
 
 <!-- If you want, I can:
 
